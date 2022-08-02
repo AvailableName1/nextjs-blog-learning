@@ -7,7 +7,13 @@ import utilStyles from "../styles/utils.module.css";
 const name = "Igor Torbin";
 export const siteTitle = "Next.js Learning Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
